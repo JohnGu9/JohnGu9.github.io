@@ -4,20 +4,21 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "17ac4516f0ec6da12383bda5a849499d",
-"index.html": "0bf6e6344444955d80629b137f77aba2",
-"/": "0bf6e6344444955d80629b137f77aba2",
-"main.dart.js": "41f666cd883a7eb86959d4e05be4aaf3",
+"index.html": "53dcfb0d6a51a2bafea23d9626f8cc20",
+"/": "53dcfb0d6a51a2bafea23d9626f8cc20",
+"main.dart.js": "786a1bd2ccc491b12f849719b9138605",
 "favicon.png": "21008bfe959c18f3dd9bb9da291e8385",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "fbc9cbc51d825aa3de3591726d7d6231",
 "assets/js/native.js": "6e4ddf1090b18315ec03bc7221870764",
-"assets/AssetManifest.json": "2bd3aabda12cc380bc5050083653f0fc",
+"assets/AssetManifest.json": "b9768746371651c91253e6ecea08a97e",
 "assets/NOTICES": "3eb68335ba9e72b6f4c3101922bd6be0",
-"assets/FontManifest.json": "c2da117c965911def2f5f69db0316423",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/assets/images/flask.png": "b592b1154d25c072c104d331939dd67c",
+"assets/assets/images/zh_white.png": "605913887664747e7aeabd3f3385a3cd",
 "assets/assets/images/tensorflow.png": "98d39edfd4443f9c28b6525782ce3ccf",
 "assets/assets/images/python.png": "c36dccadd99982a2966ea22fe5a1a21c",
 "assets/assets/images/opencv.png": "8fd9ef8e488a57fd1adc014c5fcace3a",
@@ -29,6 +30,7 @@ const RESOURCES = {
 "assets/assets/images/skill.jpg": "515ea5998aae5c8c8061fb33c57b92e0",
 "assets/assets/images/javascript.png": "db7933e6a7f7acaf99a33f39b286974b",
 "assets/assets/images/background.jpg": "2d9d263d6680b4d6cea32ca018166415",
+"assets/assets/images/zh_black.png": "469a0ca0bebcfb2cf21a09500a56be5d",
 "assets/assets/images/other.jpg": "18e0638b61bd34eb505889b5a6758394",
 "assets/assets/images/go.png": "cbda8fc457c9145bc0ad939b8b71f887",
 "assets/assets/images/logo.png": "21008bfe959c18f3dd9bb9da291e8385",
@@ -43,7 +45,13 @@ const RESOURCES = {
 "assets/assets/images/kotlin.png": "e8c4671b1cca100eed3c9cfed1f28b05",
 "assets/assets/images/electron.png": "3ba2a5b8cbc4059d5c04bdc43e8e2d8a",
 "assets/assets/images/nodejs.png": "5813f3082a7fe8624b3b5a6ab6c6b6af",
-"assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Regular.otf": "370c2c5d738acca06fafa8fa8b1e2033"
+"assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Regular.otf": "370c2c5d738acca06fafa8fa8b1e2033",
+"assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Thin.otf": "2e365ca1185a4fdd1bcf29f8e9a58fa2",
+"assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Light.otf": "a56b3cd8a1a76fb323c74935ad5a3012",
+"assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Medium.otf": "44655c54ecff52bae7e4d79c80b3d563",
+"assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Bold.otf": "d8a8395b3f1e53fc64393906ff995e48",
+"assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Black.otf": "015fd15b32d2fc14879949b7df5849a8",
+"assets/assets/fonts/Noto_Sans_SC/OFL.txt": "bec6f772ed2e38634da53c388c30437d"
 };
 
 // The application shell files that are downloaded before a service worker can
