@@ -45,7 +45,7 @@
       border-top: 8px solid #2196F3;
       width: 60px;
       height: 60px;
-      -webkit-animation: spin 1s linear infinite;
+      -webkit-animation: spin 1s ease-in-out infinite;
       /* Safari */
       animation: spin 1s ease-in-out infinite;
     }
@@ -89,12 +89,12 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=104660629');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3942133420');
       });
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
-  <script src="assets/js/native.js"></script>
+  <script src="native.js"></script>
 </body>
 
 </html>
