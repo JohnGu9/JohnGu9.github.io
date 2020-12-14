@@ -4,10 +4,10 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "17ac4516f0ec6da12383bda5a849499d",
-"index.html": "97c318ee7a63d00f758f1ed7e49540d7",
-"/": "97c318ee7a63d00f758f1ed7e49540d7",
-"native.js": "c641c58df6e6f4777fa36a44cdb42230",
-"main.dart.js": "7e624a554e5707f83d024a1949485a7d",
+"index.html": "e6266b57f24fcd46539ec896271c78d3",
+"/": "e6266b57f24fcd46539ec896271c78d3",
+"native.js": "9445e418c73df84dcd043a51aa0b037c",
+"main.dart.js": "b2dc17873d9af6965b2e3fd7d5fc4dbb",
 "favicon.png": "21008bfe959c18f3dd9bb9da291e8385",
 "error.png": "c41d34f620c93c8055b2a6df7db2ff08",
 "icons/Icon-192.png": "1b8cc8fbddfa93fa04b948bd76925e93",
@@ -58,7 +58,7 @@ const RESOURCES = {
 "assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Bold.otf": "d8a8395b3f1e53fc64393906ff995e48",
 "assets/assets/fonts/Noto_Sans_SC/NotoSansSC-Black.otf": "015fd15b32d2fc14879949b7df5849a8",
 "assets/assets/fonts/Noto_Sans_SC/OFL.txt": "bec6f772ed2e38634da53c388c30437d",
-"preload.css": "16e2785d7eab0cc06b850d8b1d133b44"
+"preload.css": "dad13b9420099890fdfc9edb9cf5f4d1"
 };
 
 // The application shell files that are downloaded before a service worker can
