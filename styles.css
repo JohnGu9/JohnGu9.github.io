@@ -1,0 +1,135 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 46, 95, 1);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loading {
+    cursor: wait;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.69);
+}
+
+.loader .text {
+    line-height: 2em;
+    padding-left: 1em;
+}
+
+.loader .connection-speed {
+    line-height: 0em;
+    opacity: 0;
+    padding-left: 1em;
+    font-size: small;
+    max-lines: 1;
+    text-overflow: ellipsis;
+
+    transition: line-height 450ms ease, opacity 150ms ease 200ms;
+    will-change: line-height, opacity;
+}
+
+
+/* Loader 6 */
+.loader-6 {
+    height: 108px;
+    width: 108px;
+}
+
+.loader-6 span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 32px;
+    width: 32px;
+}
+
+.loader-6 span::before,
+.loader-6 span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 32px;
+    width: 32px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: loader-6-1 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite;
+    animation: loader-6-1 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite;
+}
+
+@-webkit-keyframes loader-6-1 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes loader-6-1 {
+    0% {
+        transform: translate3d(0, 0, 0) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.loader-6 span::after {
+    -webkit-animation: loader-6-2 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) .25s infinite;
+    animation: loader-6-2 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) .25s infinite;
+}
+
+@-webkit-keyframes loader-6-2 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes loader-6-2 {
+    0% {
+        transform: translate3d(0, 0, 0) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) scale(1);
+        opacity: 0;
+    }
+}
