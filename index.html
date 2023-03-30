@@ -35,56 +35,25 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '578209439';
+    var serviceWorkerVersion = '2002601405';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 
+  <link rel="stylesheet" href="styles.css">
+
   <link rel="preload" href="main.dart.js" as="script" fetchpriority="high" />
   <link rel="preload" href="canvaskit/canvaskit.wasm" as="fetch" fetchpriority="low" crossorigin />
-
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="loader">
-    <div class="loader-6"><span></span></div>
+    <div class="loader-5"><span></span></div>
     <div class="text">loading...</div>
     <div class="connection-speed"></div>
+    <div class="error-hint"></div>
   </div>
-  <script>
-    document.documentElement.classList.add("loading");
-    let timer = null;
-    setTimeout(function () {
-      if ('connection' in navigator && 'downlink' in navigator.connection) {
-        const loader = document.body.querySelector(".loader .connection-speed");
-        if (loader) {
-          loader.innerHTML = `(${navigator.connection.downlink.toFixed(1)} Mbit/s)`;
-          loader.style.opacity = "1";
-          loader.style.lineHeight = "1em";
-          timer = setInterval(function () {
-            loader.innerHTML = `(${navigator.connection.downlink.toFixed(1)} Mbit/s)`;
-          }, 500);
-        }
-      }
-    }, 500);
-    window.addEventListener('load', function (ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function (engineInitializer) {
-          engineInitializer.initializeEngine().then(function (appRunner) {
-            if (timer != null) clearInterval(timer);
-            document.body.querySelector(".loader").remove();
-            document.documentElement.classList.remove("loading");
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
